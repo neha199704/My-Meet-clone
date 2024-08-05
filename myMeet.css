@@ -4,7 +4,14 @@ body {
   font-family: Arial, sans-serif;
   height: 100vh;
 }
+h3 {
+  margin: 0;
+  padding: 0;
+}
 
+button {
+  cursor: pointer;
+}
 #main {
   /* width: 70%; */
   /* height: 200px; */
@@ -72,6 +79,7 @@ aside {
   width: 360px;
   margin: 18px;
   border-radius: 10px;
+  transition: display 300ms;
   /* display: none; */
 }
 button {
@@ -82,8 +90,11 @@ button {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-top: 30px;
-  /* position: fixed; */
+  /* margin-top: 30px; */
+  position: fixed;
+  left: 0;
+  bottom: 7px;
+  right: 0;
   /* margin-bottom: 10px; */
   /* padding: 5px; */
   /* background-color: yellow; */
@@ -101,8 +112,8 @@ i {
 
 .mid-footer i {
   background-color: #3d4043;
-  /* padding: 15px */
-  padding: 15px 20px;
+  padding: 15px;
+  /* padding: 15px 20px; */
   border-radius: 50px;
   color: white;
   cursor: pointer;
@@ -123,6 +134,7 @@ i {
 }
 .right-footer {
   margin-right: 21px;
+  font-size: 24px;
 }
 .right-footer i {
   margin: 10px;
@@ -178,6 +190,10 @@ i {
   font-size: 16px;
   border: none;
 }
+/* aside {
+  overflow: scroll;
+  height: 800px;
+} */
 
 aside > p {
   color: #64686d;
@@ -202,6 +218,10 @@ aside > p {
   margin: 10px;
   border: 1px solid #e2e3e6;
   border-radius: 10px;
+  /* overflow: scroll; */
+  /* overflow: scroll;
+  height: 800px; */
+  /* overflow: hidden; */
 }
 
 ul li {
@@ -233,4 +253,80 @@ ul li i:nth-child(2) {
   float: right;
   margin: 10px;
   margin-top: 20px;
+}
+
+.right-footer button {
+  background-color: transparent;
+  border: none;
+  /* padding: 20px; */
+  /* line-height: 20px; */
+  font-size: 24px;
+}
+
+#addPeopleDiv {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background-color: whitesmoke;
+  width: 400px;
+  height: 400px;
+  border-radius: 10px;
+  display: none;
+  /* overflow: scroll; */
+}
+
+.add-people2 {
+  display: flex;
+  justify-content: space-between;
+  text-align: center;
+  margin: 10px;
+}
+
+.add-people2 button {
+  background-color: transparent;
+  border: none;
+  font-size: 24px;
+}
+
+.h3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  /* border-bottom: 2px solid blue; */
+}
+
+.h3 h3 {
+  border-bottom: 2px solid #0957d1;
+  color: #0957d1;
+  border-radius: 2px;
+}
+.searchForAdd {
+  width: 100%;
+  padding: 14px;
+  border: 1px solid #e2e3e6;
+}
+
+#addPeopleDiv > p {
+  color: #64686d;
+  margin: 20px;
+}
+
+.checkboxSuggestions {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid red; */
+}
+
+.users-email {
+  display: flex;
+  align-items: center;
+  /* border: 1px solid blue; */
+  flex: 1;
+}
+
+.parentSuggestion {
+  height: 200px;
+
+  overflow-y: scroll;
 }

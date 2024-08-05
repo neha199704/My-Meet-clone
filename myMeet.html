@@ -14,16 +14,15 @@
     <title>Document</title>
   </head>
   <body>
-    <aside>
+    <aside id="aside">
       <div class="people">
         <p>People</p>
-        <button>
-          <!-- x -->
+        <button id="crossAside">
           <i class="fa-solid fa-xmark"></i>
         </button>
       </div>
       <div>
-        <button class="add-people">
+        <button class="add-people" id="addPeople">
           <i class="fa-solid fa-user-plus" style="color: #595a5b"></i>
           Add people
         </button>
@@ -54,10 +53,12 @@
             ></i>
           </li>
           <li>
-            <i class="fa-solid fa-user"></i>
-            Captain America
-            <i class="fa-solid fa-ellipsis-vertical"> </i>
-            <i class="fa-solid fa-microphone-slash"></i>
+            <div>
+              <i class="fa-solid fa-user"></i>
+              Captain America
+              <i class="fa-solid fa-ellipsis-vertical"> </i>
+              <i class="fa-solid fa-microphone-slash"></i>
+            </div>
           </li>
           <li>
             <i class="fa-solid fa-user"></i>Thor
@@ -87,6 +88,25 @@
           </li>
           <li>
             <i class="fa-solid fa-user"></i>Loki<i
+              class="fa-solid fa-ellipsis-vertical"
+            ></i
+            ><i class="fa-solid fa-microphone-slash"></i>
+          </li>
+
+          <li>
+            <i class="fa-solid fa-user"></i>Captain Marvel<i
+              class="fa-solid fa-ellipsis-vertical"
+            ></i
+            ><i class="fa-solid fa-microphone-slash"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-user"></i>Captain Marvel<i
+              class="fa-solid fa-ellipsis-vertical"
+            ></i
+            ><i class="fa-solid fa-microphone-slash"></i>
+          </li>
+          <li>
+            <i class="fa-solid fa-user"></i>Captain Marvel<i
               class="fa-solid fa-ellipsis-vertical"
             ></i
             ><i class="fa-solid fa-microphone-slash"></i>
@@ -192,7 +212,7 @@
         </div>
         <div class="img-div">
           <img
-            src="https://p7.hiclipart.com/preview/276/35/602/black-panther-marvel-cinematic-universe-clip-art-black-panther.jpg"
+            src="https://wallpapers.com/images/featured/black-panther-superhero-pictures-4hrmrigt9h6ym8lo.jpg"
             alt=""
           />
           <p>Black-Panther</p>
@@ -214,11 +234,75 @@
         <i class="fa-solid fa-phone"></i>
       </div>
       <div class="right-footer">
-        <i class="fa-solid fa-circle-info"></i>
-        <i class="fa-solid fa-user-group"></i>
-        <i class="fa-solid fa-message"></i>
-        <i class="fa-solid fa-shapes"></i>
-        <i class="fa-solid fa-lock"></i>
+        <button><i class="fa-solid fa-circle-info"></i></button>
+        <button id="userGroup"><i class="fa-solid fa-user-group"></i></button>
+        <button><i class="fa-solid fa-message"></i></button>
+        <button><i class="fa-solid fa-shapes"></i></button>
+        <button><i class="fa-solid fa-lock"></i></button>
+      </div>
+    </div>
+
+    <!-- add people div -->
+
+    <div id="addPeopleDiv">
+      <div class="add-people2">
+        <p>Add People</p>
+        <button id="crossAddPeople"><i class="fa-solid fa-xmark"></i></button>
+      </div>
+      <div class="h3">
+        <h3><i class="fa-solid fa-user-plus"></i>Invite</h3>
+      </div>
+      <input
+        type="search"
+        placeholder="Enter name or email"
+        class="searchForAdd"
+      />
+      <p>Suggestions</p>
+      <div class="parentSuggestion">
+        <div class="checkboxSuggestions">
+          <div class="users-email">
+            <i class="fa-solid fa-circle-user"></i>
+            <p>
+              123
+              <br />
+              123@123
+            </p>
+          </div>
+          <input type="checkbox" />
+        </div>
+        <div class="checkboxSuggestions">
+          <div class="users-email">
+            <i class="fa-solid fa-circle-user"></i>
+            <p>
+              123
+              <br />
+              123@123
+            </p>
+          </div>
+          <input type="checkbox" />
+        </div>
+        <div class="checkboxSuggestions">
+          <div class="users-email">
+            <i class="fa-solid fa-circle-user"></i>
+            <p>
+              123
+              <br />
+              123@123
+            </p>
+          </div>
+          <input type="checkbox" />
+        </div>
+        <div class="checkboxSuggestions">
+          <div class="users-email">
+            <i class="fa-solid fa-circle-user"></i>
+            <p>
+              123
+              <br />
+              123@123
+            </p>
+          </div>
+          <input type="checkbox" />
+        </div>
       </div>
     </div>
   </body>
