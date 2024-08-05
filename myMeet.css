@@ -219,8 +219,8 @@ aside > p {
   border: 1px solid #e2e3e6;
   border-radius: 10px;
   /* overflow: scroll; */
-  /* overflow: scroll;
-  height: 800px; */
+  overflow-y: scroll;
+  height: 578px;
   /* overflow: hidden; */
 }
 
