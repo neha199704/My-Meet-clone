@@ -15,14 +15,14 @@ button {
 #main {
   /* width: 70%; */
   /* height: 200px; */
-  display: flex;
-  justify-content: center;
+  /* display: flex; */
+  /* justify-content: center; */
   /* padding: 20px; */
-  padding-top: 50px;
+  /* padding-top: 50px; */
   /* align-items: center; */
   /* display: inline;  */
   /* margin: 10px 0; */
-  margin-left: 20px;
+  /* margin-left: 20px; */
   /* margin-top: 20px; */
   /* margin-top: 20px; */
 }
@@ -50,7 +50,16 @@ img:hover {
 /* } */
 
 .img-parent-div {
-  padding: 5px;
+  padding-top: 25px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.5s;
+
+  /* width: 80%; */
+  /* width: calc(100% - 400px); */
+  flex-wrap: wrap;
+  gap: 5px;
 }
 
 .img-div {
@@ -73,7 +82,7 @@ img:hover {
 }
 
 aside {
-  float: right;
+  /* float: right; */
   background-color: white;
   height: 830px;
   width: 360px;
@@ -81,6 +90,10 @@ aside {
   border-radius: 10px;
   transition: display 300ms;
   /* display: none; */
+  transition: 0.5s;
+  position: absolute;
+  right: -400px;
+  top: 0;
 }
 button {
   background-color: #c2e8ff;
@@ -329,4 +342,42 @@ ul li i:nth-child(2) {
   height: 200px;
 
   overflow-y: scroll;
+}
+
+.joiningInfo {
+  border-bottom: 1px solid #e2e3e6;
+  padding: 10px;
+  margin: 10px;
+}
+
+.joiningInfo i {
+  margin: 5px;
+}
+
+.joiningInfo .join {
+  color: #1c73eb;
+}
+
+.joiningInfo .link,
+.msg {
+  color: #64686d;
+}
+
+.msg {
+  margin-left: 17px;
+}
+
+#aside2 {
+  /* float: right; */
+  background-color: white;
+  height: 830px;
+  width: 360px;
+  margin: 18px;
+  border-radius: 10px;
+  transition: display 300ms;
+  /* display: none; */
+  transition: 0.5s;
+  position: absolute;
+  right: -400px;
+  top: 0;
 }
